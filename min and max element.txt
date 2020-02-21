@@ -1,0 +1,32 @@
+import java.io.*; 
+  
+class MNM { 
+      
+    static int getMin(int arr[], int x) 
+    { 
+        int pro = arr[0]; 
+          
+        for (int i = 1; i < x; i++) 
+            pro = Math.min(pro, arr[i]); 
+        return pro; 
+    } 
+      
+    static int getMax(int arr[], int x) 
+    { 
+        int pro = arr[0]; 
+          
+        for (int i = 1; i < x; i++) 
+            pro = Math.max(pro, arr[i]); 
+        return pro; 
+    } 
+ public static void main (String[] args)  
+    { 
+        int arr[] = { 21, 765, 345, 7, 12 }; 
+        int x = arr.length; 
+        System.out.println( "Minimum element"
+           + " of array: " + getMin(arr, x)); 
+        System.out.println( "Maximum element"
+           + " of array: " + getMax(arr, x)); 
+    } 
+} 
+  
